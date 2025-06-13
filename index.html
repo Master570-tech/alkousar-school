@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AL KOUSAR SCHOOL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #3949ab;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #5c6bc0;
+    }
+    .section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #1a237e;
+    }
+    .contact-form input,
+    .contact-form textarea,
+    .admission-form input,
+    .admission-form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .contact-form button,
+    .admission-form button {
+      background-color: #1a237e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- School Logo -->
+    <div class="logo">
+      <svg viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" stroke="white" stroke-width="4" fill="#1a237e" />
+        <text x="32" y="40" font-size="20" text-anchor="middle" fill="white" font-family="Arial">AKS</text>
+      </svg>
+    </div>
+    <h1>AL KOUSAR SCHOOL</h1>
+    <p>Empowering Future Generations</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#mission">Mission & Vision</a>
+    <a href="#academics">Academics</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="about">
+    <h2>About AL KOUSAR SCHOOL</h2>
+    <p>AL KOUSAR SCHOOL is a forward-thinking educational institution dedicated to excellence in academics, moral values, and community development. Our school serves students from Pre-K to Grade 12, offering a nurturing environment where every learner is encouraged to thrive intellectually, socially, and spiritually.</p>
+  </section>
+
+  <section class="section" id="mission">
+    <h2>Our Mission & Vision</h2>
+    <p><strong>Mission:</strong> To provide holistic education that nurtures the mind and heart, instilling knowledge, ethics, and leadership in our students.</p>
+    <p><strong>Vision:</strong> To be a leading school known for academic excellence, character development, and community service, guided by values of integrity, compassion, and respect.</p>
+  </section>
+
+  <section class="section" id="academics">
+    <h2>Academics</h2>
+    <ul>
+      <li>🌟 Early Childhood Education (Nursery - KG)</li>
+      <li>📘 Primary and Secondary School Curriculum</li>
+      <li>🖥️ Computer Science & Digital Literacy</li>
+      <li>🧪 Science Labs and Projects</li>
+      <li>📖 Quran & Islamic Studies</li>
+      <li>🎨 Arts, Sports, and Extracurricular Activities</li>
+    </ul>
+  </section>
+
+  <section class="section" id="admission">
+    <h2>Admission Form</h2>
+    <form class="admission-form" onsubmit="submitAdmission(event)">
+      <input type="text" name="studentName" placeholder="Student's Full Name" required />
+      <input type="text" name="fatherName" placeholder="Father's Name" required />
+      <input type="number" name="age" placeholder="Student Age" required />
+      <select name="class" required>
+        <option value="">Select Class</option>
+        <option value="Nursery">Nursery</option>
+        <option value="KG">KG</option>
+        <option value="1">Class 1</option>
+        <option value="2">Class 2</option>
+        <option value="3">Class 3</option>
+        <!-- Add more as needed -->
+      </select>
+      <input type="tel" name="contact" placeholder="Parent Contact Number" required />
+      <input type="email" name="email" placeholder="Email Address" />
+      <button type="submit">Submit Admission Form</button>
+    </form>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:masteranees151@gmail.com">masteranees151@gmail.com</a></p>
+    <p>Phone: <a href="tel:03067634468">0306 7634468</a></p>
+    <p>Address: Shaher Sultan, Al Qadir Town</p>
+  </section>
+
+  <footer>
+    &copy; 2025 AL KOUSAR SCHOOL. All rights reserved.
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been sent.");
+    }
+
+    function submitAdmission(event) {
+      event.preventDefault();
+      alert("Admission form submitted successfully!");
+    }
+  </script>
+
+</body>
+        </html>
+    
